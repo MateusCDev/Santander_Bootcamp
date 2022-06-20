@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex_conteiner{
+    display:flex;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a{
+    text-decoration: none;
+}
+div img{
+    display: block;
+    width: 100%;
+}
+header{
+    background-color: coral;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: green;
+    text-decoration: solid;
+}
+header .list-items{
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-between;
+}
+.list-items li a{
+    color: green;
+    border-radius: 20%;
+    padding: 5px;
+    font-size:20px;
+}
+header .menu{
+    justify-content: space-between;
+    align-items: center;
+}
+.apresentação{
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+}
+.apresentação .texto_apresenta{
+    min-height: 200px;
+}
+.texto_apresenta h1{
+    color: coral;
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+.texto_apresenta a{
+    margin: 10px;
+    font-size: 20px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+}
+#quem-somos{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+#quem-somos h2{
+    font-size: 30px;
+    color: coral;
+    display: flex;
+    margin-bottom: 15px;
+}
+#quem-somos h2::before{
+    content:"";
+    height: 35px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: darkgreen;
+}
+#quem-somos p{
+    margin-bottom: 6px;
+    width: 90%;
+}
+#quem-somos img{
+   min-width: 550px;
+}
+.conteiner-externo{
+    background-color: coral;
+    width: 100%;  
+}
+#serviços {
+    flex-direction: column;;
+    padding: 100px 0;
+}
+#serviços h2{
+    color: darkgreen;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.lista-serviço{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lista-serviço .items-serviço{
+    text-align: center;
+}
+.items-serviço a{
+    font-size:20px;
+    margin-top: 15px;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color:green;
+    width: 190px;
+    border-radius: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.items-serviço p{
+    font-weight: 700px;
+    margin-top: 25px;
+    color: darkgreen;
+    font-size: 20px;
+}
