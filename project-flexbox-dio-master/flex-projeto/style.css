@@ -1,5 +1,5 @@
 *{
-    margin:0;
+    margin-left:2px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,6 +8,7 @@
     max-width: 1000px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 ul{
     list-style: none;
@@ -58,7 +59,7 @@ header .menu{
     font-size: 50px;
     margin-bottom: 12px;
 }
-.texto_apresenta a{
+.btn{
     margin: 10px;
     font-size: 20px;
     background-color: coral;
@@ -71,11 +72,16 @@ header .menu{
     height: 40px;
     line-height: 40px;
 }
+
 #quem-somos{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
 }
+#quem-somos img{
+    min-width: 320px;
+    margin: auto;
+ }
 #quem-somos h2{
     font-size: 30px;
     color: coral;
@@ -97,11 +103,12 @@ header .menu{
    min-width: 550px;
 }
 .conteiner-externo{
+    display: flex;
     background-color: coral;
     width: 100%;  
 }
 #serviços {
-    flex-direction: column;;
+    flex-direction: column;
     padding: 100px 0;
 }
 #serviços h2{
@@ -120,7 +127,7 @@ header .menu{
 .items-serviço a{
     font-size:20px;
     margin-top: 15px;
-    display: block;
+    display: flex;
     padding: 5px 10px;
     text-decoration: none;
     color: white;
@@ -129,10 +136,149 @@ header .menu{
     border-radius: 30px;
     height: 40px;
     line-height: 40px;
+    justify-content: center;
 }
 .items-serviço p{
+    flex: 1;
     font-weight: 700px;
     margin-top: 25px;
     color: darkgreen;
     font-size: 20px;
 }
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
+#planos h2{
+    margin-top: 50px;
+    color: coral;
+    font-size: 50px;
+}
+.lista-planos{
+    display: flex;
+    min-height: 350px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.item-plano{
+    max-width: 215px;
+    padding: 45px;
+    text-align: center;
+    margin-right: 10px;
+    flex: 1;
+    border: 5px solid  green;
+    
+}
+.item-plano .btn{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.item-plano h3{
+    font-size: 30px;
+    color: coral;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.item-plano h3::after{
+    content: "";
+    background-color: darkgreen;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.item-plano  ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    line-height: 25px;
+}
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: darkgreen;
+    margin-right: 5px;
+}
+footer{
+    background-color: darkgreen;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+footer .footer{
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+}
+@media(max-width: 992px){
+  
+    .flex_conteiner{
+        flex-direction: column;
+    }
+   
+    .apresentação{
+        flex-direction: column-reverse;
+    }
+    
+    .apresentação .texto_apresenta{
+        width: 100%;   
+    }
+    .apresentação img{
+        flex-direction: column;
+        height: 300px;
+        min-width: 500px;
+    } 
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+    #quem-somos img{
+        margin-top: 50px;
+        height: 300px;
+        min-width: 500px;
+    }
+    
+    .lista-serviço{
+        flex-direction: column;
+    }
+    .items-serviço img{
+        width:50% ;
+        margin: auto;
+    }
+    .items-serviço a{
+        margin: auto;
+    }
+    .lista-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .lista-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width:100%;
+        margin-bottom:20px ;
+    }
+    footer{
+        flex-flow: column wrap;
+        width: 100%;
+        height: 200px;
+        padding: 5px 10px;
+    }
+    .footer{
+        min-width: 320px;
+    }
+}
+    
+
+    
+
+
